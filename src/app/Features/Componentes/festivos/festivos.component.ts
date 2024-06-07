@@ -14,36 +14,40 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrl: './festivos.component.css'
 })
 export class FestivosComponent {
-  
 
-  public FechaBusqueda: Date | null = null;
-  public festivos: Festivo[] = [];
-  public columnas = [
-    { name: "Día Festivo", prop: "nombre" },
-    { name: "Tipo de Festivo", prop: "idtipo" }
-  ];
 
-  constructor(private festivoService: FestivoService ,
-    private festivoDialogo: MatDialog) {}
+  public FechaBusqueda: any = new Date();
+  public esFestivo: boolean | null = null;
+
+  constructor(private festivoService: FestivoService) { }
 
   buscar() {
-    if (this.FechaBusqueda) {
-      const ano = this.FechaBusqueda.getFullYear();
-      const mes = this.FechaBusqueda.getMonth() + 1;
-      const dia = this.FechaBusqueda.getDate();
-      
-      this.festivoService.buscar(ano, mes, dia).subscribe(
-        resultado => {
-          console.log('Resultado:', resultado);
+
+    let fechaConvert = this.FechaBusqueda;
+    const [year, month, day] = fechaConvert.split('-').map(Number);
+    const fecha = new Date(Date.UTC(year, month - 1, day));
+
+    // Comprobamos si es una fecha válida
+    if (!isNaN(fecha.getTime())) {
+      const ano = fecha.getUTCFullYear();
+      const mes = fecha.getUTCMonth() + 1;
+      const dia = fecha.getUTCDate();
+
+      this.festivoService.validarFecha(ano, mes, dia).subscribe(
+        (response: any) => {
+          window.alert(response);
         },
-        error => {
-          console.error('Error:', error);
+        (error: any) => {
+          console.log(error);
         }
       );
+    } else {
+      console.error("La fecha proporcionada no es válida.");
     }
   }
 
   limpiarFechaBusqueda() {
     this.FechaBusqueda = null;
+    this.esFestivo = null;
   }
 }

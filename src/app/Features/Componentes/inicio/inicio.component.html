@@ -1,4 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
 
-<div class="imagen-fullscreen">
-   <img src="https://depor.com/resizer/uNfNuDspK3StP34QrGZiLrt1F84=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/HKZZPKVILNEURGSNVJSGV3DGTU.jpg" alt="imagen/jpg">
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto sobre Imagen</title>
+
+    <style>
+        .imagen-fullscreen {
+            position: relative;
+            /* Establece el contenedor como relativo */
+            width: 100%;
+            height: auto;
+        }
+
+        .imagen-fullscreen img {
+            width: 100%;
+            height: auto;
+        }
+
+        .texto-sobre-imagen {
+            position: absolute;
+            /* Establece el texto como absoluto */
+            top: 10px;
+            /* Posiciona el texto 10 píxeles desde el borde superior */
+            left: 10px;
+            /* Posiciona el texto 10 píxeles desde el borde izquierdo */
+            color: rgb(3, 3, 3);
+            /* Cambia el color del texto */
+            font-size: 15px;
+            /* Tamaño del texto */
+            font-weight: bold;
+            /* Estilo del texto */
+            text-align: left;
+            /* Alineación del texto a la izquierda */
+
+        }
+
+        table {
+            border-collapse: collapse;
+            /* Colapsa los bordes de la tabla */
+            width: 100%;
+            /* Ancho completo */
+        }
+
+        td {
+            border: 1px solid #080808;
+            /* Bordes de las celdas */
+            padding: 3px;
+            /* Espaciado interno de las celdas */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imagen-fullscreen">
+        <img src="https://depor.com/resizer/uNfNuDspK3StP34QrGZiLrt1F84=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/HKZZPKVILNEURGSNVJSGV3DGTU.jpg"
+            alt="imagen/jpg">
+        <div class="texto-sobre-imagen">
+
+            <style>
+                .subrayar {
+                    text-decoration: underline;
+                    text-align: center;
+                }
+            </style>
+            <table>
+                <tr>
+                    <td class="subrayar">MES</td>
+                    <td class="subrayar">NOMBRE DEL FESTIVO</td>
+                </tr>
+                <tr>
+                    <td>Enero</td>
+                    <td>Año Nuevo</td>
+                </tr>
+                <tr>
+                    <td>Enero</td>
+                    <td>Epifanía</td>
+                </tr>
+                <tr>
+                    <td>Febrero</td>
+                    <td>No Aplica Festivos</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td>San Jose</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td>Jueves Santo</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td>Viernes Santo</td>
+                </tr>
+                <tr>
+                    <td>Abril</td>
+                    <td>Aplica Solo Cuando Semana Santa no es en Marzo</td>
+                </tr>
+                <tr>
+                    <td>Mayo</td>
+                    <td>Día del Trabajo</td>
+                </tr>
+                <tr>
+                    <td>Mayo</td>
+                    <td>Ascención del señor</td>
+                </tr>
+                <tr>
+                    <td>Junio</td>
+                    <td>Corpus Christi</td>
+                </tr>
+                <tr>
+                    <td>Junio</td>
+                    <td>Sagrado Corazón de Jesús</td>
+                </tr>
+                <tr>
+                    <td>Julio</td>
+                    <td>San Pedro y San Pablo</td>
+                </tr>
+                <tr>
+                    <td>Julio</td>
+                    <td>Independencia</td>
+                </tr>
+                <tr>
+                    <td>Agosto</td>
+                    <td>Batalla de Boyacá</td>
+                </tr>
+                <tr>
+                    <td>Agosto</td>
+                    <td>Asunción de la Virgen</td>
+                </tr>
+                <tr>
+                    <td>Septiembre</td>
+                    <td>No Aplica Festivos</td>
+                </tr>
+                <tr>
+                    <td>Octubre</td>
+                    <td>Día de la Diversidad Étnica y Cultural de la Nación Colombiana</td>
+                </tr>
+                <tr>
+                    <td>Noviembre</td>
+                    <td>Día de Todos los Santos</td>
+                </tr>
+                <tr>
+                    <td>Noviembre</td>
+                    <td>Independencia de Cartagena</td>
+                </tr>
+                <tr>
+                    <td>Diciembre</td>
+                    <td>Inmaculada Concepción</td>
+                </tr>
+                <tr>
+                    <td>Diciembre</td>
+                    <td>Navidad</td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

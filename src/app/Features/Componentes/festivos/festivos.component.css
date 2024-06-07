@@ -32,23 +32,44 @@
     background-color: rgb(254, 255, 255); 
   }
   
-  
   .custom-mat-form-field mat-form-field input {
-    color: rgb(252, 250, 250); /* Cambia el color del texto dentro del campo de entrada a rojo */
+    color: rgb(10, 10, 10); /* Cambia el color del texto dentro del campo de entrada a rojo */
+    font-size: 20px; /* Ajusta el tamaño de la letra */
+    font-family: 'Open Sans', sans-serif; /* Aplica la fuente personalizada */
+    font-style: italic; /* Aplica cursiva al texto */
    
   }
 
-  .custom-mat-form-field mat-label {
-    color: rgb(253, 253, 253); /* Cambia el color del texto "Buscar" a verde */
-  }
-
- 
-  
   .custom-mat-form-field button {
     min-width: 100px; /* Ancho mínimo del botón */
     background-color: rgb(10, 10, 10); /* Cambia el color de fondo del botón a azul */
     color: white; /* Cambia el color del texto del botón a blanco */
-    height: 55px; /* Altura del botón */
-
+    height: 50px; /* Altura del botón */
+    font-style: italic; /* Aplica cursiva al texto */
+    font-size: 18px; /* Ajusta el tamaño de la letra */
+    font-family: 'Open Sans', sans-serif; /* Aplica la fuente personalizada */
+    margin-top: -20px; /* Ajusta la distancia hacia arriba */
     
   }
+
+  .form-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el formulario */
+    align-items: center; /* Centra verticalmente el formulario */
+    height: 20vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
+  }
+
+  .custom-mat-form-field {
+    width: 390px; /* Ajusta el ancho del campo de formulario */
+    margin: 20px; /* Añade margen alrededor del campo de formulario */
+ 
+}
+
+  .imagen-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    width: 300px; /* Anchura deseada */
+    height: 300px; /* Altura deseada */
+}
