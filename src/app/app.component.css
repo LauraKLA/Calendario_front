@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+mat-toolbar {
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #101111; /* Cambia el color de fondo */
+    color: rgb(248, 243, 243); /* Cambia el color del texto */
+    font-family: 'Open Sans', sans-serif; /* Aplica la fuente personalizada */
+    font-weight: 800; /* Puedes ajustar el peso de la fuente si es necesario */
+    font-style: italic; /* Aplica cursiva al texto */
+    font-size: 40px; /* Ajusta el tamaño de la letra */
+  }
+
+  
+  

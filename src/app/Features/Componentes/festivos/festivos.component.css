@@ -1,0 +1,54 @@
+.custom-toolbar {
+    background: none; /* Elimina cualquier color de fondo */
+    box-shadow: none; /* Elimina cualquier sombra */
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier relleno */
+    border: none; /* Elimina cualquier borde */
+}
+
+.barraTituloCRUD {
+    background: linear-gradient(90deg, rgb(247, 243, 10), rgb(16, 31, 238), rgb(243, 17, 17)); /* Degradado lineal de izquierda a derecha */
+    color: #f7f4f4;
+    height: 75px;
+    text-align: center; /* Centrar horizontalmente */
+    display: flex; /* Utilizamos flexbox para centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente con flexbox */
+    align-items: center; /* Centrar verticalmente con flexbox */
+    width: 100%; /* Ancho deseado */
+    font-family: 'Open Sans', sans-serif; /* Aplica la fuente personalizada */
+    font-weight: 00; /* Puedes ajustar el peso de la fuente si es necesario */
+    font-style: italic; /* Aplica cursiva al texto */
+    font-size: 38px; /* Ajusta el tamaño de la letra */
+    margin: auto; /* Centra horizontalmente */
+    height: 50px; /* Altura deseada */
+}
+
+.custom-mat-form-field {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el campo de entrada y el botón */
+    height: 70px; /* Altura del contenedor */
+    width: 400px; /* Ancho del contenedor */
+    background-color: rgb(254, 255, 255); 
+  }
+  
+  
+  .custom-mat-form-field mat-form-field input {
+    color: rgb(252, 250, 250); /* Cambia el color del texto dentro del campo de entrada a rojo */
+   
+  }
+
+  .custom-mat-form-field mat-label {
+    color: rgb(253, 253, 253); /* Cambia el color del texto "Buscar" a verde */
+  }
+
+ 
+  
+  .custom-mat-form-field button {
+    min-width: 100px; /* Ancho mínimo del botón */
+    background-color: rgb(10, 10, 10); /* Cambia el color de fondo del botón a azul */
+    color: white; /* Cambia el color del texto del botón a blanco */
+    height: 55px; /* Altura del botón */
+
+    
+  }

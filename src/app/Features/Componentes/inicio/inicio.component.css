@@ -1,0 +1,16 @@
+.imagen-fullscreen {
+    position: fixed; /* Para que el contenedor permanezca fijo en la pantalla */
+    width: 100%; /* Ancho igual al 100% del ancho de la ventana */
+    height: 100%; /* Alto igual al 100% del alto de la ventana */
+    display: flex; /* Utiliza flexbox para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.imagen-fullscreen img {
+    max-width: 100%; /* El alto máximo de la imagen será del 100% del alto del contenedor */
+    max-height: 100%; /* El alto máximo de la imagen será del 100% del alto del contenedor */
+    width: 100%; /* Ancho igual al 100% del ancho de la ventana */
+    height: 100%; /* Alto igual al 100% del alto de la ventana */
+
+}

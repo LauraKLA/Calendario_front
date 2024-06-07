@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.campo-busqueda .mat-form-field {
+    background-color: black; /* Establece el fondo del campo de entrada a negro */
+    width: 100%; /* Opcional: ancho completo */
+}
